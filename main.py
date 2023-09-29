@@ -20,8 +20,8 @@ class BrowserTab(QWebEngineView):
         # 创建自定义的 QWebEngineProfile
         self.custom_profile = QWebEngineProfile("google docs", self)
         self.custom_profile.setPersistentCookiesPolicy(QWebEngineProfile.PersistentCookiesPolicy.AllowPersistentCookies)
-        self.custom_profile.setCachePath('./web_cache')
-        self.custom_profile.setPersistentStoragePath('./web_storage')
+        # self.custom_profile.setCachePath('./web_cache')
+        # self.custom_profile.setPersistentStoragePath('./web_storage')
 
         self.setPage(QWebEnginePage(self.custom_profile, self))
 
